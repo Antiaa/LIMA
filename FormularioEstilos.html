@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Información relacionada con la web para ser utilizada por los buscadores">
+        <link rel="stylesheet" href="FormularioEstilos.css">
+        <title> Formulario </title>
+    </head>
+    <body>
+        <form id="Form" action="./procesadatos.php" method="get">
+            Nombre: <input type="text" name="Nombre" placeholder="Escribe o teu nome" size="15" maxlength="25" autofocus required><br/>
+            Apellidos: <input type="text" name="Apellidos" placeholder="Escribe os teus apelidos" size="50" maxlength="40" required>
+            <br/>
+            <br/>
+            <br/>
+            <fieldset id="Dir">
+                <legend>Dirección completa:</legend>
+                <fieldset id="Calle">
+                    Calle: <input type="text" name="Calle" placeholder="Escribe a rúa" size="50" maxlength="150">
+                    Número: <input type="number" name="Número" step="2" min="10" max="32">
+                    Letra: <input type="text" name="Letra" size="5" maxlength="5">
+                    Piso: <input type="text" name="Piso" placeholder="Piso" size="5" maxlength="5">
+                    Bloque: <input type="text" name="Bloque" placeholder="Bloque" size="5" maxlength="5"><br/>
+                    </fieldset>
+                Código Postal: <input type="number" name="Código Postal" placeholder="00000" min="01000" max="52999" step="1"><br/>
+                Localidad: <input type="text" name="Localidad" placeholder="Localidade" size="20" maxlength="30">
+                Provincia: <input type="text" name="Provincia" placeholder="Provincia" size="15" maxlength="40"><br/>
+                País: <select name="País" size="3">
+                        <option value="1">España</option>
+                        <option value="2">Portugal</option>
+                        <option value="3">Francia</option>
+                        <option value="4">Alemania</option>
+                        <option value="5">Bélgica</option>
+                        <option value="6">Países Bajos</option>
+                        <option value="7">Reino Unido</option>
+                        <option value="8">Italia</option>
+                        <option value="9">Noruega</option>
+                        <option value="10">Suecia</option>
+                </select>
+            </fieldset>
+            <br/>
+            Foto de perfil: <br/><br/>
+            Currículum: <input type="file" name="Currículum"><br/><br/>
+            Fecha de Nacimiento: <input type="date" name="Fecha Nacimiento"><br/>
+            <fieldset id="Email">
+                Email: <input type="email" name="Email"><br/>
+                Dirección página web: <input type="url" name="url"><br/>
+            </fieldset>
+            <fieldset id="Tlfn">
+                Teléfono fijo:<input type="tel" name="Teléfono fijo"><br/>
+                Teléfono móvil:<input type="tel" name="Teléfono móvil"><br/>
+            </fieldset>
+             Nota de acceso a la universidad: <input type="range" name="Nota Acceso" min="0" max="10" step="0.5"><br/>
+            <fieldset id="Usuario">
+                Nombre de Usuario:<input type="text" name="Nombre Usuario" max="12"><br/>
+                Contraseña: <input type="password" name="Contraseña" min="6" max="14"><br/>
+            </fieldset>
+            Aficciones:<br/>
+                <input type="checkbox" name="AficcionesPel">Películas<br/>
+                <input type="checkbox" name="AficcionesDep">Deporte<br/>
+                <input type="checkbox" name="AficcionesMus">Música<br/>
+                <input type="checkbox" name="AficcionesJue">Juegos Online<br/>
+                <input type="checkbox" name="AficcionesLeer">Leer<br/>
+            Rango Edad:<br/>
+            <input type="radio" name="Rango Edad" value="18-22">Mayor o igual a 18 y menor de 22<br/>
+            <input type="radio" name="Rango Edad" value="22-30">Mayor o igual a 22 y menor de 30<br/>
+            <input type="radio" name="Rango Edad" value="30-40">Mayor o igual a 30 y menor de 40<br/>
+            <input type="radio" name="Rango Edad" value=">40">Mayor o igual a 40<br/>
+            Idioma: <input type="text" name="Idioma"><br/><br/>
+            Comentarios: <textarea name="Comentarios" rows="5" cols="50" placeholder="Escribe tus comentarios"></textarea><br/><br/>
+            <input type="checkbox" name="Términos" value="Acepto">He leído y acepto el aviso legal y la política de privacidad<br/>
+            <br/><br/>
+            <button type="submit">Enviar<img src="enviar.png"></button>
+            <button type="reset">Borrar<img src="borrar.png"></button>
+            
+           
+		</form>
+           
+            
+        
+			     
+            
+   </body>
+</html>
